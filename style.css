@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;702&display=swap');
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #fde3d9;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 120px;
+    color: #f47645;
+    text-shadow: 1px 1px 1px #c05d36,
+        1px 2px 1px #c05d36,
+        1px 3px 1px #c05d36,
+        1px 4px 1px #c05d36,
+        1px 5px 1px #b35631,
+        1px 6px 1px #b35631,
+        1px 7px 1px #974929,
+        1px 8px 1px #974929,
+        1px 9px 1px #361a0e,
+        1px 6px 6px rgba(97, 141, 177, 0.4);
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    border: 2px solid #7acfdf;
+    border-radius: 20px;
+    background-color: #7acfdf;
+    width: 400px;
+    min-height: 500px;
+    padding-bottom: 30px;
+    box-shadow: 1px 1px 1px #67b3c2,
+        1px 2px 1px #67b3c2,
+        1px 3px 1px #67b3c2,
+        1px 4px 1px #67b3c2,
+        1px 5px 1px #67b3c2,
+        1px 6px 1px #67b3c2,
+        1px 7px 1px #67b3c2,
+        1px 8px 1px #67b3c2,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.calculette {
+    display: flex;
+    justify-content: center;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.display-screen {
+    display: flex;
+    align-items: center;
+    border: 2px solid #7acfdf;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fdeee8;
+    color: rgb(75, 72, 72);
+    height: 70px;
+    min-width: 300px;
+    width: 306px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: rtl;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    align-self: center;
+    -moz-box-shadow:    inset 0 0 5px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    box-shadow:         inset 0 0 5px #000000;
+}
+
+.buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 75px 75px 75px 75px;
+    grid-template-rows: auto; 
+    column-gap: 2px;
+    row-gap: 3px;
+}
+
+button {
+    font-size: 24px;
+    height: 75px;
+    width: 75px;
+    color: #fde3d9;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+button:active {
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(1px);
+}
+
+.plus-minus {
+    font-weight: bolder;
+}
+
+.divide {
+    font-weight: bolder;
+}
+
+.number {
+    background-color: #fde3d9;
+    color: #f47645;
+    border-radius: 10px;
+    border: 2px solid #fde3d9;
+    font-weight: 500;
+}
+
+.erase {
+    background-color: #fde3d9;
+    color: #f47645;
+    border-radius: 10px;
+    border: 2px solid #fde3d9;
+    font-weight: 500;
+}
+
+.operate {
+    background-color: #f47645;
+    border: 2px solid #f47645;
+    border-radius: 50%;
+}
+
+.clear {
+    background-color: #f47645;
+    border: 2px solid #fde3d9;
+    border-radius: 50%;
+}
+
+.equal {
+    background-color: #f47645;
+    border: 2px solid #f47645;
+    border-radius: 50%;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #f9ad8d;
+    color: rgb(75, 72, 72);
+    text-align: center;
+    font-weight: 600;  
+    min-width: 100%;
+    padding: 16px;
+}
